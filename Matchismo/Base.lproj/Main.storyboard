@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Card Game View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="CardGameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oY5-Bo-8Ox"/>
+                        <viewControllerLayoutGuide type="bottom" id="fsd-gT-MTd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHy-6B-N8D">
+                                <rect key="frame" x="20" y="20" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pIy-Dm-BqB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FB9-oq-WEy">
+                                <rect key="frame" x="68" y="20" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Mlg-FV-f83"/>
+                                    <constraint firstAttribute="height" constant="60" id="qRd-b0-p6K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RCH-Lb-VCq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asy-4j-nu0">
+                                <rect key="frame" x="116" y="20" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="acM-u8-DV5"/>
+                                    <constraint firstAttribute="height" constant="60" id="k4p-Rb-7xP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="f51-pO-8OM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lou-Ar-iDM">
+                                <rect key="frame" x="164" y="20" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="5se-PV-h9i"/>
+                                    <constraint firstAttribute="width" constant="40" id="dot-Ov-H9p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rd3-yc-h1x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aeo-a2-kaW">
+                                <rect key="frame" x="212" y="20" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="EyS-6T-xUa"/>
+                                    <constraint firstAttribute="width" constant="40" id="lD0-54-OLp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vbG-vZ-Hsv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zh0-zt-X6n">
+                                <rect key="frame" x="260" y="20" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Kjc-Oq-kjC"/>
+                                    <constraint firstAttribute="height" constant="60" id="h3b-Wz-ew0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="E34-B8-wMj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQB-Dx-ctd">
+                                <rect key="frame" x="68" y="88" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Jch-nF-SAi"/>
+                                    <constraint firstAttribute="height" constant="60" id="iAo-pa-1sU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Nuc-qa-GUH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9H-Hn-XwO">
+                                <rect key="frame" x="20" y="88" width="39" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="BVw-k3-35b"/>
+                                    <constraint firstAttribute="width" constant="39" id="b67-yn-1qd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SI6-e4-70H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKC-bi-BOH">
+                                <rect key="frame" x="116" y="88" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="he1-ml-Xyg"/>
+                                    <constraint firstAttribute="height" constant="60" id="hmr-80-cbj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="afG-qK-3fG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9D-uY-But">
+                                <rect key="frame" x="164" y="88" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="YBU-VH-dDL"/>
+                                    <constraint firstAttribute="width" constant="40" id="eRm-98-nqb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PzR-BV-yG9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zF-Ff-r8P">
+                                <rect key="frame" x="212" y="88" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="4ms-9B-d6q"/>
+                                    <constraint firstAttribute="height" constant="60" id="duA-OJ-s4M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="e1z-0O-ktK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFN-3x-RKu">
+                                <rect key="frame" x="260" y="88" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="HVh-C9-vHz"/>
+                                    <constraint firstAttribute="height" constant="60" id="s79-d0-Lec"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hFd-d9-HKd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="og5-1s-ky2">
+                                <rect key="frame" x="20" y="156" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="cdN-iQ-RZh"/>
+                                    <constraint firstAttribute="width" constant="40" id="ful-bJ-fcY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pcv-HP-5mW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4E-BI-79g">
+                                <rect key="frame" x="68" y="156" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="wSe-TH-hLp"/>
+                                    <constraint firstAttribute="width" constant="40" id="zzH-wc-5CQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="K4b-Kh-l02"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFO-IG-PeL">
+                                <rect key="frame" x="116" y="156" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="AHs-VA-eVq"/>
+                                    <constraint firstAttribute="width" constant="40" id="UfQ-EG-sEh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ufd-tx-zkH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aen-zo-zzm">
+                                <rect key="frame" x="164" y="156" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="M2o-y2-Aa7"/>
+                                    <constraint firstAttribute="height" constant="60" id="Tia-Yq-eh3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CHr-r2-JjO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5B-o6-7xx">
+                                <rect key="frame" x="212" y="156" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="LLy-Fc-Orr"/>
+                                    <constraint firstAttribute="height" constant="60" id="thS-hi-V6X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="73x-b5-pCP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3O-oV-2W3">
+                                <rect key="frame" x="260" y="156" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="HHv-Bj-Wrd"/>
+                                    <constraint firstAttribute="height" constant="60" id="Kvh-91-2zA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pxd-MA-lXO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXL-mG-Kcg">
+                                <rect key="frame" x="68" y="224" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="aei-YK-Sga"/>
+                                    <constraint firstAttribute="height" constant="60" id="vPF-yx-flJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8Kq-6u-PYg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biu-ki-Yiw">
+                                <rect key="frame" x="20" y="224" width="39" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="39" id="4LE-FC-37a"/>
+                                    <constraint firstAttribute="height" constant="60" id="Nfi-pu-H0d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gCe-oe-Dzh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybc-qj-k21">
+                                <rect key="frame" x="116" y="224" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Of7-IP-b0E"/>
+                                    <constraint firstAttribute="height" constant="60" id="eVu-56-gco"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4FO-OF-kSl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zv-pj-Avz">
+                                <rect key="frame" x="164" y="224" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="jJ3-2a-IpM"/>
+                                    <constraint firstAttribute="height" constant="60" id="lEd-Hy-CSO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Xi8-xu-ygA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8B-e5-UuA">
+                                <rect key="frame" x="212" y="224" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Ye8-89-EjG"/>
+                                    <constraint firstAttribute="width" constant="40" id="jSg-Rv-WMe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6hz-q2-JpF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jge-t6-EXo">
+                                <rect key="frame" x="260" y="224" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="URO-J1-Ipw"/>
+                                    <constraint firstAttribute="width" constant="40" id="dsO-bY-cqQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1ZI-lU-kxb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A79-OD-nyJ">
+                                <rect key="frame" x="68" y="292" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="P4w-gq-a33"/>
+                                    <constraint firstAttribute="height" constant="60" id="p6q-QB-uJJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PH3-gE-Kie"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJ7-Hh-d2x">
+                                <rect key="frame" x="21" y="292" width="39" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="39" id="GJi-x5-iC6"/>
+                                    <constraint firstAttribute="height" constant="60" id="xuH-6j-zXQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2vx-7q-uAJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJ7-Gh-zyz">
+                                <rect key="frame" x="116" y="292" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="lEq-Yv-6hi"/>
+                                    <constraint firstAttribute="width" constant="40" id="ze3-Va-7fY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="GSB-7G-YB5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jl-GJ-GvJ">
+                                <rect key="frame" x="164" y="292" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="DNW-Hg-9y4"/>
+                                    <constraint firstAttribute="height" constant="60" id="DhW-IP-GnT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="AOA-TV-Ftv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peD-XM-xYI">
+                                <rect key="frame" x="212" y="292" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="9Q8-gl-RYC"/>
+                                    <constraint firstAttribute="width" constant="40" id="E0c-wa-4GM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dlR-ds-Mjk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Fs-Tv-oCc">
+                                <rect key="frame" x="260" y="292" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Qlu-gZ-3eY"/>
+                                    <constraint firstAttribute="height" constant="60" id="bjB-Qm-Egy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rPk-wX-yd8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8f-4f-VzK">
+                                <rect key="frame" x="20" y="527" width="136" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzB-X4-fNW">
+                                <rect key="frame" x="236" y="526" width="64" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Re-Deal">
+                                    <color key="titleShadowColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchRedealButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9YC-Rx-OcG"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2Sm-PY-2Vz">
+                                <rect key="frame" x="92" y="485" width="136" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="2 Card"/>
+                                    <segment title="3 Card"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="modeChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="6Xb-Mw-SIx"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Click on the cards to start game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="fjt-Ka-7Uo">
+                                <rect key="frame" x="29" y="386" width="271" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZXE-ao-cMl">
+                                <rect key="frame" x="19" y="444" width="283" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="browseHistoryOnSliding:" destination="vXZ-lx-hvc" eventType="valueChanged" id="YH1-CA-NM1"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0Fs-Tv-oCc" firstAttribute="top" secondItem="Jge-t6-EXo" secondAttribute="bottom" constant="8" id="05x-wD-RjO"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="biu-ki-Yiw" secondAttribute="width" id="0Pp-8F-xua"/>
+                            <constraint firstItem="Zh0-zt-X6n" firstAttribute="leading" secondItem="Aeo-a2-kaW" secondAttribute="trailing" constant="8" id="1At-wD-6g5"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="XJ7-Gh-zyz" secondAttribute="width" id="2dh-at-o2l"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="A79-OD-nyJ" secondAttribute="width" id="34Y-Pc-0va"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="e9D-uY-But" secondAttribute="height" id="3hI-ST-TLw"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="U3O-oV-2W3" secondAttribute="height" id="41u-h2-R23"/>
+                            <constraint firstItem="aJ7-Hh-d2x" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="21" id="441-u4-bta"/>
+                            <constraint firstAttribute="trailing" secondItem="Jge-t6-EXo" secondAttribute="trailing" constant="20" id="477-dB-baU"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="XJ7-Gh-zyz" secondAttribute="height" id="5CO-X2-DB0"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="Aeo-a2-kaW" secondAttribute="height" id="5x7-Cd-fXl"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="aen-zo-zzm" secondAttribute="height" id="66Q-cK-6eu"/>
+                            <constraint firstItem="peD-XM-xYI" firstAttribute="top" secondItem="Z8B-e5-UuA" secondAttribute="bottom" constant="8" id="6Vf-ro-6el"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="peD-XM-xYI" secondAttribute="width" id="8H1-3w-OhK"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="4jl-GJ-GvJ" secondAttribute="width" id="8ZK-bn-3G3"/>
+                            <constraint firstItem="4jl-GJ-GvJ" firstAttribute="top" secondItem="7zv-pj-Avz" secondAttribute="bottom" constant="8" id="8il-fg-scG"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="peD-XM-xYI" secondAttribute="height" id="8oK-2U-hnf"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="e9D-uY-But" secondAttribute="width" id="8tK-Ru-vAU"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="SKC-bi-BOH" secondAttribute="height" id="92h-rE-Jac"/>
+                            <constraint firstItem="asy-4j-nu0" firstAttribute="top" secondItem="oY5-Bo-8Ox" secondAttribute="bottom" id="9Mb-Po-oF9"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="0Fs-Tv-oCc" secondAttribute="height" id="9aB-lA-R3f"/>
+                            <constraint firstItem="Y9H-Hn-XwO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="9me-ZP-Lqp"/>
+                            <constraint firstItem="7zv-pj-Avz" firstAttribute="leading" secondItem="Ybc-qj-k21" secondAttribute="trailing" constant="8" id="AN5-vJ-332"/>
+                            <constraint firstItem="4jl-GJ-GvJ" firstAttribute="leading" secondItem="XJ7-Gh-zyz" secondAttribute="trailing" constant="8" id="Bge-4N-NzJ"/>
+                            <constraint firstItem="aen-zo-zzm" firstAttribute="leading" secondItem="EFO-IG-PeL" secondAttribute="trailing" constant="8" id="BpT-ju-slZ"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="jFN-3x-RKu" secondAttribute="width" id="C9Z-9x-x35"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="Y9H-Hn-XwO" secondAttribute="width" id="CPt-IP-PoE"/>
+                            <constraint firstItem="SKC-bi-BOH" firstAttribute="top" secondItem="asy-4j-nu0" secondAttribute="bottom" constant="8" id="D4s-vU-N5z"/>
+                            <constraint firstItem="e9D-uY-But" firstAttribute="leading" secondItem="SKC-bi-BOH" secondAttribute="trailing" constant="8" id="EhG-Ci-oS2"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="Zh0-zt-X6n" secondAttribute="height" id="EtW-TK-P4A"/>
+                            <constraint firstItem="A79-OD-nyJ" firstAttribute="leading" secondItem="aJ7-Hh-d2x" secondAttribute="trailing" constant="8" id="FJT-Yo-4rm"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="asy-4j-nu0" secondAttribute="width" id="G9L-Wq-H2e"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="Z8B-e5-UuA" secondAttribute="height" id="GCm-Mj-UC1"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="0Fs-Tv-oCc" secondAttribute="width" id="Gxv-5E-qGl"/>
+                            <constraint firstItem="Zh0-zt-X6n" firstAttribute="top" secondItem="oY5-Bo-8Ox" secondAttribute="bottom" id="H4A-zo-jo5"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="7zv-pj-Avz" secondAttribute="width" id="HLl-gJ-Uwx"/>
+                            <constraint firstItem="biu-ki-Yiw" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Ik5-8X-mvd"/>
+                            <constraint firstItem="Z8B-e5-UuA" firstAttribute="leading" secondItem="7zv-pj-Avz" secondAttribute="trailing" constant="8" id="J0D-DO-bdC"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="EFO-IG-PeL" secondAttribute="width" id="JCc-WY-7Xf"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="aJ7-Hh-d2x" secondAttribute="height" id="JXj-Ex-M6Q"/>
+                            <constraint firstItem="EFO-IG-PeL" firstAttribute="leading" secondItem="c4E-BI-79g" secondAttribute="trailing" constant="8" id="JnV-m2-Lhc"/>
+                            <constraint firstItem="xXL-mG-Kcg" firstAttribute="top" secondItem="c4E-BI-79g" secondAttribute="bottom" constant="8" id="KF3-Mv-f1i"/>
+                            <constraint firstItem="asy-4j-nu0" firstAttribute="leading" secondItem="FB9-oq-WEy" secondAttribute="trailing" constant="8" id="Lji-Bn-Vdo"/>
+                            <constraint firstItem="c4E-BI-79g" firstAttribute="top" secondItem="jQB-Dx-ctd" secondAttribute="bottom" constant="8" id="P1j-7f-CEU"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="4jl-GJ-GvJ" secondAttribute="height" id="P87-VU-7q1"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="U3O-oV-2W3" secondAttribute="width" id="PsL-Iw-UcK"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="Jge-t6-EXo" secondAttribute="width" id="QnY-hj-0BV"/>
+                            <constraint firstItem="A79-OD-nyJ" firstAttribute="top" secondItem="xXL-mG-Kcg" secondAttribute="bottom" constant="8" id="Rws-LC-qKa"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="og5-1s-ky2" secondAttribute="width" id="SJq-o2-IkW"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="Zh0-zt-X6n" secondAttribute="width" id="U1L-zU-Yvk"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="c4E-BI-79g" secondAttribute="width" id="USq-sM-xLJ"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="FB9-oq-WEy" secondAttribute="width" id="UUT-al-2D3"/>
+                            <constraint firstItem="lou-Ar-iDM" firstAttribute="leading" secondItem="asy-4j-nu0" secondAttribute="trailing" constant="8" id="Uib-Sd-Bji"/>
+                            <constraint firstItem="og5-1s-ky2" firstAttribute="top" secondItem="Y9H-Hn-XwO" secondAttribute="bottom" constant="8" id="V5M-qk-Tp4"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="xXL-mG-Kcg" secondAttribute="width" id="VAV-dh-KEc"/>
+                            <constraint firstItem="Aeo-a2-kaW" firstAttribute="top" secondItem="oY5-Bo-8Ox" secondAttribute="bottom" id="VIO-qt-BRm"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="EFO-IG-PeL" secondAttribute="height" id="VTf-Gk-OSF"/>
+                            <constraint firstItem="w5B-o6-7xx" firstAttribute="leading" secondItem="aen-zo-zzm" secondAttribute="trailing" constant="8" id="Vhk-b9-Z6h"/>
+                            <constraint firstItem="biu-ki-Yiw" firstAttribute="top" secondItem="og5-1s-ky2" secondAttribute="bottom" constant="8" id="VpR-om-tPA"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="SKC-bi-BOH" secondAttribute="width" id="WvH-7g-Ov5"/>
+                            <constraint firstAttribute="trailing" secondItem="Zh0-zt-X6n" secondAttribute="trailing" constant="20" id="XNi-Gl-GTG"/>
+                            <constraint firstItem="w5B-o6-7xx" firstAttribute="top" secondItem="9zF-Ff-r8P" secondAttribute="bottom" constant="8" id="XPB-FZ-8gH"/>
+                            <constraint firstAttribute="trailing" secondItem="0Fs-Tv-oCc" secondAttribute="trailing" constant="20" id="Y9N-Af-sDO"/>
+                            <constraint firstItem="FB9-oq-WEy" firstAttribute="top" secondItem="oY5-Bo-8Ox" secondAttribute="bottom" id="YFu-g0-Lkj"/>
+                            <constraint firstItem="jFN-3x-RKu" firstAttribute="leading" secondItem="9zF-Ff-r8P" secondAttribute="trailing" constant="8" id="YL6-0J-193"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="xXL-mG-Kcg" secondAttribute="height" id="ZFY-LZ-dlk"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="A79-OD-nyJ" secondAttribute="height" id="bEx-fY-hcx"/>
+                            <constraint firstItem="Ybc-qj-k21" firstAttribute="top" secondItem="EFO-IG-PeL" secondAttribute="bottom" constant="8" id="cHI-z5-6RF"/>
+                            <constraint firstItem="aen-zo-zzm" firstAttribute="top" secondItem="e9D-uY-But" secondAttribute="bottom" constant="8" id="cdE-ve-fUz"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="9zF-Ff-r8P" secondAttribute="width" id="cis-Dc-8cZ"/>
+                            <constraint firstItem="9zF-Ff-r8P" firstAttribute="leading" secondItem="e9D-uY-But" secondAttribute="trailing" constant="8" id="dD6-WE-w8r"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="7zv-pj-Avz" secondAttribute="height" id="daw-L3-EmS"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="Ybc-qj-k21" secondAttribute="height" id="db9-fQ-Dzm"/>
+                            <constraint firstItem="e9D-uY-But" firstAttribute="top" secondItem="lou-Ar-iDM" secondAttribute="bottom" constant="8" id="eDT-tt-2JC"/>
+                            <constraint firstItem="0Fs-Tv-oCc" firstAttribute="leading" secondItem="peD-XM-xYI" secondAttribute="trailing" constant="8" id="emQ-o0-UTg"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="lou-Ar-iDM" secondAttribute="height" id="f10-uE-Ki1"/>
+                            <constraint firstItem="9zF-Ff-r8P" firstAttribute="top" secondItem="Aeo-a2-kaW" secondAttribute="bottom" constant="8" id="f4I-DN-y7K"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="Y9H-Hn-XwO" secondAttribute="height" id="f6k-jO-vg9"/>
+                            <constraint firstItem="U3O-oV-2W3" firstAttribute="top" secondItem="jFN-3x-RKu" secondAttribute="bottom" constant="8" id="fF7-zG-6FP"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="jFN-3x-RKu" secondAttribute="height" id="fWZ-H2-Pnm"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="FB9-oq-WEy" secondAttribute="height" id="fYU-cd-dnC"/>
+                            <constraint firstItem="SKC-bi-BOH" firstAttribute="leading" secondItem="jQB-Dx-ctd" secondAttribute="trailing" constant="8" id="giw-Y9-RlV"/>
+                            <constraint firstItem="og5-1s-ky2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="gtY-P3-PNe"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="Ybc-qj-k21" secondAttribute="width" id="guV-8P-mIS"/>
+                            <constraint firstAttribute="trailing" secondItem="U3O-oV-2W3" secondAttribute="trailing" constant="20" id="hbd-PP-4P3"/>
+                            <constraint firstItem="xXL-mG-Kcg" firstAttribute="leading" secondItem="biu-ki-Yiw" secondAttribute="trailing" constant="9" id="ilR-8b-1X1"/>
+                            <constraint firstItem="XJ7-Gh-zyz" firstAttribute="top" secondItem="Ybc-qj-k21" secondAttribute="bottom" constant="8" id="ioS-Yr-hHE"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="asy-4j-nu0" secondAttribute="height" id="jP3-1C-2rc"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="top" secondItem="FB9-oq-WEy" secondAttribute="bottom" constant="8" id="k8h-pl-5dw"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="Aeo-a2-kaW" secondAttribute="width" id="kI3-43-kfl"/>
+                            <constraint firstItem="Jge-t6-EXo" firstAttribute="top" secondItem="U3O-oV-2W3" secondAttribute="bottom" constant="8" id="kUu-U4-eFu"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="w5B-o6-7xx" secondAttribute="width" id="khg-YO-hJk"/>
+                            <constraint firstItem="peD-XM-xYI" firstAttribute="leading" secondItem="4jl-GJ-GvJ" secondAttribute="trailing" constant="8" id="kty-8v-H48"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="Z8B-e5-UuA" secondAttribute="width" id="oIP-JQ-Wre"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="biu-ki-Yiw" secondAttribute="height" id="osL-iu-AdA"/>
+                            <constraint firstItem="Aeo-a2-kaW" firstAttribute="leading" secondItem="lou-Ar-iDM" secondAttribute="trailing" constant="8" id="ouR-eP-fb6"/>
+                            <constraint firstItem="lou-Ar-iDM" firstAttribute="top" secondItem="oY5-Bo-8Ox" secondAttribute="bottom" id="pWk-Mk-aoB"/>
+                            <constraint firstItem="jFN-3x-RKu" firstAttribute="top" secondItem="Zh0-zt-X6n" secondAttribute="bottom" constant="8" id="ptl-GR-6XX"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="9zF-Ff-r8P" secondAttribute="height" id="qdb-nV-cRA"/>
+                            <constraint firstItem="aJ7-Hh-d2x" firstAttribute="top" secondItem="biu-ki-Yiw" secondAttribute="bottom" constant="8" id="qsj-V3-sIk"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="Jge-t6-EXo" secondAttribute="height" id="rKf-46-sXe"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="aJ7-Hh-d2x" secondAttribute="width" id="rTX-CJ-lAk"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="w5B-o6-7xx" secondAttribute="height" id="soY-Bw-sfZ"/>
+                            <constraint firstAttribute="trailing" secondItem="jFN-3x-RKu" secondAttribute="trailing" constant="20" id="t56-kg-xzK"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="leading" secondItem="Y9H-Hn-XwO" secondAttribute="trailing" constant="9" id="u9c-eM-Ez5"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="lou-Ar-iDM" secondAttribute="width" id="uNd-IJ-CYZ"/>
+                            <constraint firstItem="Ybc-qj-k21" firstAttribute="leading" secondItem="xXL-mG-Kcg" secondAttribute="trailing" constant="8" id="uUt-zv-gPy"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="width" secondItem="aen-zo-zzm" secondAttribute="width" id="vL2-3B-fPY"/>
+                            <constraint firstItem="Jge-t6-EXo" firstAttribute="leading" secondItem="Z8B-e5-UuA" secondAttribute="trailing" constant="8" id="vXb-JA-zYE"/>
+                            <constraint firstItem="Z8B-e5-UuA" firstAttribute="top" secondItem="w5B-o6-7xx" secondAttribute="bottom" constant="8" id="wQi-Xj-v3h"/>
+                            <constraint firstItem="U3O-oV-2W3" firstAttribute="leading" secondItem="w5B-o6-7xx" secondAttribute="trailing" constant="8" id="xSE-lh-sdb"/>
+                            <constraint firstItem="7zv-pj-Avz" firstAttribute="top" secondItem="aen-zo-zzm" secondAttribute="bottom" constant="8" id="ynp-CL-a8Y"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="c4E-BI-79g" secondAttribute="height" id="yrv-HG-Ykv"/>
+                            <constraint firstItem="EFO-IG-PeL" firstAttribute="top" secondItem="SKC-bi-BOH" secondAttribute="bottom" constant="8" id="zbK-FW-xWR"/>
+                            <constraint firstItem="jQB-Dx-ctd" firstAttribute="height" secondItem="og5-1s-ky2" secondAttribute="height" id="zqy-A2-XsH"/>
+                            <constraint firstItem="c4E-BI-79g" firstAttribute="leading" secondItem="og5-1s-ky2" secondAttribute="trailing" constant="8" id="zuf-8g-0tF"/>
+                            <constraint firstItem="XJ7-Gh-zyz" firstAttribute="leading" secondItem="A79-OD-nyJ" secondAttribute="trailing" constant="8" id="zxn-Do-BQ6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="historySlider" destination="ZXE-ao-cMl" id="rdc-mk-y0Q"/>
+                        <outlet property="matchModelControl" destination="2Sm-PY-2Vz" id="Lw4-vE-BJv"/>
+                        <outlet property="moveDescription" destination="fjt-Ka-7Uo" id="gli-89-kJG"/>
+                        <outlet property="redealButton" destination="EzB-X4-fNW" id="6lo-0j-0zJ"/>
+                        <outlet property="scoreLabel" destination="k8f-4f-VzK" id="pil-49-dCH"/>
+                        <outletCollection property="cardButtons" destination="jFN-3x-RKu" id="UXS-pb-Y0O"/>
+                        <outletCollection property="cardButtons" destination="9zF-Ff-r8P" id="3Kl-pn-PUO"/>
+                        <outletCollection property="cardButtons" destination="e9D-uY-But" id="EsD-Uq-FEn"/>
+                        <outletCollection property="cardButtons" destination="SKC-bi-BOH" id="I2E-hW-uKf"/>
+                        <outletCollection property="cardButtons" destination="Y9H-Hn-XwO" id="Dpx-y8-xmP"/>
+                        <outletCollection property="cardButtons" destination="jQB-Dx-ctd" id="NTB-6W-oW7"/>
+                        <outletCollection property="cardButtons" destination="Zh0-zt-X6n" id="bDQ-Qz-7rb"/>
+                        <outletCollection property="cardButtons" destination="Aeo-a2-kaW" id="XpM-c3-0HY"/>
+                        <outletCollection property="cardButtons" destination="lou-Ar-iDM" id="Lrq-Qq-iON"/>
+                        <outletCollection property="cardButtons" destination="asy-4j-nu0" id="evb-9u-lHt"/>
+                        <outletCollection property="cardButtons" destination="FB9-oq-WEy" id="U3Y-dS-yvg"/>
+                        <outletCollection property="cardButtons" destination="JHy-6B-N8D" id="WmA-qk-3J6"/>
+                        <outletCollection property="cardButtons" destination="og5-1s-ky2" id="YsR-iU-891"/>
+                        <outletCollection property="cardButtons" destination="c4E-BI-79g" id="4QS-ZQ-nsu"/>
+                        <outletCollection property="cardButtons" destination="EFO-IG-PeL" id="wrH-5W-kba"/>
+                        <outletCollection property="cardButtons" destination="aen-zo-zzm" id="3Z8-em-VyR"/>
+                        <outletCollection property="cardButtons" destination="w5B-o6-7xx" id="3mE-Nl-peI"/>
+                        <outletCollection property="cardButtons" destination="U3O-oV-2W3" id="EkK-aW-Fo2"/>
+                        <outletCollection property="cardButtons" destination="biu-ki-Yiw" id="gWv-5r-KaQ"/>
+                        <outletCollection property="cardButtons" destination="xXL-mG-Kcg" id="sbX-TP-fGa"/>
+                        <outletCollection property="cardButtons" destination="Ybc-qj-k21" id="Xs4-1r-Wdw"/>
+                        <outletCollection property="cardButtons" destination="7zv-pj-Avz" id="weU-Ce-f4H"/>
+                        <outletCollection property="cardButtons" destination="Z8B-e5-UuA" id="rB6-Zx-RQc"/>
+                        <outletCollection property="cardButtons" destination="Jge-t6-EXo" id="2ji-YE-T8l"/>
+                        <outletCollection property="cardButtons" destination="aJ7-Hh-d2x" id="azb-92-KSk"/>
+                        <outletCollection property="cardButtons" destination="A79-OD-nyJ" id="T8t-OP-5kQ"/>
+                        <outletCollection property="cardButtons" destination="XJ7-Gh-zyz" id="Dv3-As-98c"/>
+                        <outletCollection property="cardButtons" destination="4jl-GJ-GvJ" id="6jS-op-s1v"/>
+                        <outletCollection property="cardButtons" destination="peD-XM-xYI" id="5f5-P8-yiM"/>
+                        <outletCollection property="cardButtons" destination="0Fs-Tv-oCc" id="4Je-ub-zJc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cardback" width="120" height="200"/>
+    </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
